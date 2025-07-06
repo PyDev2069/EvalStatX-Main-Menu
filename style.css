@@ -525,3 +525,157 @@ video {
 .footer a:hover {
   color: #ffffff;
 }
+/* ===== RESPONSIVE ADDITIONS ===== */
+
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  header {
+    height: auto;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  header a {
+    margin: 0 15px 10px;
+    font-size: 16px;
+  }
+}
+
+/* Carousel Mobile Styles */
+@media (max-width: 992px) {
+  .carousel {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .carousel .list .item .content {
+    top: 15%;
+    padding-right: 0;
+    width: 90%;
+  }
+  
+  .carousel .list .item .title,
+  .carousel .list .item .topic {
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+  
+  .carousel .list .item .des {
+    font-size: 14px;
+  }
+  
+  .thumbnail {
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .thumbnail .item {
+    width: 100px;
+    height: 150px;
+  }
+  
+  .arrows {
+    top: 70%;
+    right: 10%;
+    width: 80%;
+    max-width: none;
+    justify-content: space-between;
+  }
+}
+
+/* Container Layout Adjustments */
+@media (max-width: 768px) {
+  .container,
+  .containeran {
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .video-section,
+  .text-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  #page1 h1 {
+    font-size: 60px;
+  }
+  
+  #page1 h2 {
+    font-size: 22px;
+    padding: 15px 20px;
+  }
+  
+  #page1 p {
+    width: 90%;
+    font-size: 16px;
+  }
+  
+  video {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  #page1 h1 {
+    font-size: 40px;
+  }
+  
+  #page1 h1::before {
+    -webkit-text-stroke: 1px #95C11E;
+    top: -2px;
+    left: -2px;
+  }
+  
+  .carousel .list .item .buttons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .carousel .list .item .buttons button {
+    width: 100%;
+  }
+  
+  .thumbnail {
+    gap: 10px;
+  }
+  
+  .thumbnail .item {
+    width: 80px;
+    height: 120px;
+  }
+}
+
+/* Tablet Landscape Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel .list .item .content {
+    padding-right: 10%;
+  }
+  
+  #page1 h1 {
+    font-size: 100px;
+  }
+  
+  #page1 p {
+    width: 70%;
+  }
+}
+
+/* Cursor Adjustments for Mobile */
+@media (hover: none) {
+  #cursor,
+  #cursor-blur {
+    display: none;
+  }
+}
